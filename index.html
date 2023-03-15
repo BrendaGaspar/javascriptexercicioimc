@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Consulta de Calorias </h1>
+    <hr>
+    <form action="">
+        Digite o Prato:
+        <input type="text" name="" id="prato"/>
+        <br /><br />
+        Digite a Sobremesa:
+        <input type="text" name="" id="sobremesa"/>
+        <br /><br />
+        Digite a Bebida:
+        <input type="text" name="" id="bebida"/>
+        <br /><br />
+        <button onclick="calcular();return false;">Consultar</button>
+        <br /><br />
+        <div id="resposta"></div>
+        <div id="resposta2"></div>
+        <div id="resposta3"></div>
+    </form>
+
+
+</body>
+
+</html>
+<script>
+    function calcular() {
+
+        var prato = parseFloat(document.getElementById("prato").value);
+        var sobremesa = parseFloat(document.getElementById("sobremesa").value);
+        var bebida = parseFloat(document.getElementById("bebida").value);
+
+
+
+        if (prato == 1) {
+            var respostaj = "<br/> Prato Vegetariano : 180 cal ";
+            resposta.innerHTML = respostaj;
+
+        }else if (prato == 2) {
+            var respostaj = "<br/>Prato de Peixe : 230 cal ";
+            resposta.innerHTML = respostaj;
+
+        }else if (prato == 3) {
+            var respostaj = "<br/>Prato de Frango : 250 cal";
+            resposta.innerHTML = respostaj;
+
+        }else if (prato == 4) {
+            var respostaj = "<br/>Prato de Carne : 350 cal ";
+            resposta.innerHTML = respostaj;
+
+        }
+
+        if (sobremesa == 1) {
+            var respostag = "<br/>Sobremesa de Abacaxi: 75 cal ";
+            resposta2.innerHTML = respostag;
+
+        }else if (sobremesa == 2) {
+            var respostag = "<br/>Sobremesa de Sorvete Diet: 110 cal ";
+            resposta2.innerHTML = respostag;
+
+        }else if (sobremesa == 3) {
+            var respostag = "<br/>Sobremesa de Mouse Diet: 170 cal ";
+            resposta2.innerHTML = respostag;
+
+        }else if (sobremesa == 4) {
+            var respostag = "<br/>Sobremesa de Mouse de Chocolate: 200 cal ";
+            resposta2.innerHTML = respostag;
+
+        }
+
+        if (bebida == 1) {
+            var respostah = "<br/>Chá: 20 cal ";
+            resposta3.innerHTML = respostah;
+
+        }else if (bebida == 2) {
+            var respostah = "<br/>Suco de Laranja: 70 cal ";
+            resposta3.innerHTML = respostah;
+
+        }else if (bebida == 3) {
+            var respostah = "<br/>Suco de Melão: 100 cal ";
+            resposta3.innerHTML = respostah;
+
+        }else if (bebida == 4) {
+            var respostah = "<br/>Refrigerante Diet: 65 cal  ";
+            resposta3.innerHTML = respostah;
+
+        }
+
+
+    }
+</script>
